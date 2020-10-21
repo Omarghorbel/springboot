@@ -24,7 +24,7 @@ public class StorecrudApplication {
         return args -> {
             accountService.save(new AppRole(null, "USER"));
             accountService.save(new AppRole(null,"ADMIN"));
-            Stream.of("user1","user2","user3","admin").forEach(un->{
+            Stream.of("user1","user2","tarak","admin").forEach(un->{
                 accountService.saveUser(un,"1234","1234");
 
             });

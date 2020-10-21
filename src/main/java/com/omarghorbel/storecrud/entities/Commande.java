@@ -19,8 +19,10 @@ public class Commande {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private  String NomClient;
+    private  String nomClient;
     private  String nomFb;
+    private  String ville;
+
     private String imageProduit;
     private String imageProduita;
     private String imageRetour;
@@ -42,6 +44,17 @@ public class Commande {
     private Date etatFinal;
     private String utilisateur;
     private String notes;
+    private double prixusineinitial;
+    private String etatpaimentarticleusine;
+    private Date datepaimentarticleusine;
+
+    private double prixusineretour;
+    private String etatpaimentprixusineretour;
+    private Date datepaimentarticleusineretour;
+    private String etatfinalcloture;
+
+
+
 
 
 
